@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldives Tourist Places Quiz</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz</h1>
+    </header>
+
+    <main>
+        <section id="quiz-container">
+        </section>
+        <button id="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+<section id="result-container" style="display: none;">
+    <div id="score"></div>
+    <div id="certificate"></div>
+    <button id="download-certificate-btn" style="display: none;" onclick="downloadCertificate()">Download Certificate</button>
+</section>
+<script>
+    function downloadCertificate() {
+        // Redirect to page2.html
+        window.location.href = "certify.html";
+    }
+</script>
+
+        </section>
+    </main>
+
+    <script src="test.js"></script>
+</body>
+</html>

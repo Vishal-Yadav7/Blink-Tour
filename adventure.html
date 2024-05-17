@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Adventure</title>
+
+  
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    
+    <!-- bootstrap CSS file link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="spin.js">
+    
+    <!-- scroll to top -->
+    <!-- <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script> -->
+</head>
+<body>
+
+
+
+    
+    <div id="top"></div>
+  
+  <header class="header">
+    <a > <i></i><h1>&nbsp;&nbsp;&nbsp;&nbsp;Blink Tour   </a></h1><br>
+  
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+       
+           
+    </nav>
+    
+    
+  
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        
+    </div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+ 
+  <button class="btn btn-secondary ml-2 my-sm-0" style="float: right" type="submit" onclick="home()" class="navbar-link" >Home</button>  
+
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="btn btn-secondary ml-2 my-sm-0" style="float: right" type="submit" onclick="des()" class="navbar-link" >Destination</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="btn btn-secondary ml-2 my-sm-0" style="float: right" type="submit" onclick="ab()" class="navbar-link" >Trip Book</button>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="btn btn-secondary ml-2 my-sm-0" style="float: right" type="submit" onclick="ct()" class="navbar-link" >Contact Us</button>
+  
+  
+  
+  
+  
+  
+  </header>
+  <script>
+    function home() {
+        // Redirect to page2.html
+        window.location.href = "index.html";
+    }
+  </script>
+  <script>
+    function des() {
+        // Redirect to page2.html
+        window.location.href = "map.html";
+    }
+  </script>
+  <script>
+    function ct() {
+        // Redirect to page2.html
+        window.location.href = "contact.html";
+    }
+  </script>
+   <script>
+    function ab() {
+        // Redirect to page2.html
+        window.location.href = "trip.html";
+    }
+  </script>
+
+
+
+
+
+  </script>
+<div class="search-form">
+
+  <div id="close-search" class="fas fa-times"></div>
+
+  <form action="">
+      <input type="search" name="" placeholder="search here..." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+  </form>
+</div>
+
+
+
+
+
+<!-- adventure section starts  -->
+
+<!-- <section class="category adventure adventurepage" id="adventure">
+
+    <h1 class="heading">adventure Activities</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/category-1.jpg" alt="">
+            <h3>bungee jump</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/category-2.jpg" alt="">
+            <h3>zip lines</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/category-3.jpg" alt="">
+            <h3>Canoeing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="images/category-4.jpg" alt="">
+            <h3>kayaking</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda, iste odio commodi dicta accusantium, eaque expedita sint consectetur illo dolores eligendi! Rerum sint quaerat architecto assumenda ea repellendus hic voluptas, consequuntur fugiat suscipit obcaecati. Quae, perferendis aliquid! Eaque molestiae necessitatibus odit facere doloremque nulla. Provident enim facilis, expedita dolorum ullam, dolores dicta ut ex hic beatae totam molestiae? Unde, error id quo sunt, soluta corrupti eligendi quas, quisquam earum nisi libero explicabo autem nesciunt ratione veniam accusantium! Voluptatum vel culpa hic asperiores eos nostrum, eius quam accusamus aut corporis dolorem odio fuga consectetur. Aliquid assumenda quis reiciendis, debitis aperiam in laborum. Libero consequatur dolore magni corrupti! Ad sunt optio nemo mollitia velit, ipsam doloribus dignissimos ex, quas laudantium quasi minima molestias amet illum quia. Beatae alias asperiores eos. Assumenda eum temporibus minima, iusto maiores odit fuga incidunt sit quidem distinctio mollitia voluptatibus officia quod consectetur repudiandae aut accusantium, nam id aperiam neque modi error? Fuga illo delectus inventore illum esse? Autem, nisi. Quo, eius hic dolorum ex rem explicabo exercitationem ratione accusantium facere quas dignissimos possimus ipsum tempora quibusdam sunt? Voluptatum laboriosam reprehenderit qui minima! Voluptas laborum veniam illo quidem? Laudantium iure quae deleniti accusamus consequatur nam numquam exercitationem libero nisi veniam? Reprehenderit ipsum minus consequuntur ut quas, dicta sequi vel perferendis suscipit fugiat cum dolor nulla hic architecto illum tempora beatae dolore fuga distinctio molestias harum. Perferendis, aperiam? Eveniet, expedita cumque. Debitis adipisci distinctio esse, voluptatem commodi dolor iste? Voluptatibus incidunt aut qui accusamus eveniet perspiciatis unde amet? Veniam sed accusamus corporis laborum unde accusantium fuga atque alias, commodi eaque culpa, possimus, temporibus omnis dicta excepturi magni consequuntur libero repellat labore ex nesciunt. Laborum cumque dignissimos cupiditate deleniti optio nesciunt, quibusdam earum unde, maxime assumenda sequi numquam quasi alias amet sed aliquam itaque qui soluta. Voluptatem placeat suscipit illo a, doloribus in beatae voluptas totam fuga, veritatis neque ipsam porro saepe libero expedita culpa et pariatur accusamus commodi. Nobis ducimus amet, officiis quis quos animi voluptate et repellat quae laudantium est quisquam omnis eaque deserunt recusandae, assumenda fuga id sint, maxime vel necessitatibus. Veritatis doloremque expedita voluptatem sunt suscipit architecto ad fuga mollitia, ducimus et labore assumenda blanditiis natus maiores quam quisquam veniam porro voluptatibus numquam aperiam corporis nam quidem? Quaerat, blanditiis alias corrupti quibusdam at est harum nemo nesciunt perferendis nulla id quam voluptates accusantium, accusamus, architecto laboriosam assumenda deserunt quis. Iste, illum. Impedit alias velit molestias voluptate aliquid a quos ipsam eligendi dicta fuga repellat excepturi dolorem consequatur reprehenderit tempore, unde iusto. Autem eos tempore, excepturi error veritatis maxime placeat, iusto mollitia corporis sit, officiis a praesentium eaque. Culpa amet ex, magni ad totam deleniti quidem dicta debitis velit adipisci quo eaque at corporis ducimus distinctio. Aut quis iure illum optio doloremque exercitationem fugiat facilis cumque libero fuga quibusdam rem earum, dolorum possimus id ipsum corrupti obcaecati nisi? Quia nemo voluptatum laborum quasi sint cupiditate nam illum deserunt hic ad mollitia et perspiciatis, cum natus unde harum rerum officiis autem exercitationem incidunt reiciendis labore quibusdam. Commodi.</p>
+ -->
+
+
+<!-- adventure post section starts  -->
+
+<!-- Information section -->
+<!-- <section class="information">
+    <div class="container">
+    <div class="row info-1">
+   
+    <div class="col-md-6">
+    <div class="text-information">
+    <h5>Bungee Jumping</h5>
+    <p>The thrill of free-falling or bungee jumping is insanely heart-racing and a must-try for any adventure lover. Now in Sri Lanka, you can cross bungee jumping from your bucket list enjoying an amazing experience worth a lifetime. Though the sport is not quite popular in Sri Lanka, you can enjoy a thrilling fall of 160 ft at Water’s edge, Colombo.
+
+ 
+
+        Providing you with the safest equipment and the best instructors, you will be ensured of your safety throughout.</p>
+    </div>
+    </div>
+    
+    <div class="col-md-6">
+    <img src="images/image-1.png" alt="img-1" class="w-100">
+    </div>
+    </div>
+    </div>
+    </section> -->
+<!-- this is      -->
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="adventurepage">
+    
+
+    <h1 class="heading adventureh1">Adventure Activities</h1>
+     
+    <hr size="10px" color="black" />
+
+
+    <div class="container text-center" id="para">
+        <div class="row">
+          <div class="col">
+            <h5>Rafting</h5>
+            <p>Rishikesh in Uttarakhand is a renowned rafting destination, offering thrilling experiences on the Ganges River amidst breathtaking mountain scenery and cascading rapids. Dandeli in Karnataka is another popular spot, known for its challenging rapids and lush greenery along the Kali River, providing an exhilarating rafting adventure in the midst of nature. Kolad in Maharashtra is also favored for its exciting rapids on the Kundalika River, making it a popular choice for rafting enthusiasts looking for an adrenaline-pumping experience.
+
+
+
+
+
+            </p>
+           </div>
+        <div class="col">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqfxk05h2TgoxntzNcull09mDKEF1f38TRBLCLihE730Woncs-EgLiMZ3k56mu2iab_8kIizi-2bdX2_cNlNRKsQwOc7DZNOHos-Xs4GxGn8ITxXzg6o6qRUhjeFUzVEC32aKsSsMT-NVNdfHgcbD7IoAt5vdpkGN5jI970kFgbDuWyZ_3Zjkcdhl3Otw/s320/1.png" alt="img-1">
+        </div>
+
+
+        <div class="container text-center post" id="heli">
+            <div class="row">
+                <div class="col">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq9auJhg7e-C95EQrBlCBAivRcr1X4SN4uOZ2w-L1Gl2VFfqtpHgyFGaZMoPOxbRfiNkY-iviIGZMkTT3PgMbMOkwCn0wzxm_CC3d3OhqVPsc7qDDsR2ellm-MFQilQS2TXojgbyvXDpQLOz7TKyaZIiWdEenRAw_4owIFm6JUAQlsZ7BTQlbmHowj448/s320/2.png" alt="img-1">
+                </div>
+            <div class="col">
+                <h5>Camping</h5>
+                <p>Rishikesh in Uttarakhand is a popular camping destination, offering serene riverside campsites amidst the picturesque beauty of the Himalayas. Jaisalmer in Rajasthan provides a unique camping experience in the heart of the Thar Desert, where you can stay in luxury tents and enjoy cultural performances under the starlit sky. Coorg in Karnataka is another favored camping spot, known for its lush coffee plantations and tranquil surroundings, providing a perfect retreat for nature lovers.</p>    
+            </div>
+        
+    <div class="container text-center post" id="balloon">
+        <div class="row">
+          <div class="col">
+            <h5>Jeep Safari</h5>
+            <p>
+                Jim Corbett National Park in Uttarakhand is renowned for its Jeep Safaris, offering a chance to explore the rich wildlife of India, including tigers, elephants, and various bird species, amidst the park's stunning natural beauty. Ranthambore National Park in Rajasthan is another popular destination for Jeep Safaris, known for its tiger population and diverse wildlife, providing an exhilarating adventure through rugged terrain and dense forests.</p>
+        </div>
+        <div class="col">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS6HgbTNLU8eBJkIE4kR8f2HWLpnq3SB-D4UYYApSUEoWKsaho0VpAdhlDDsHYr4iZyCAkIc1J9htv2lqcIe5B6_uL30muK89JQqUhMqMF44xlxpVcMT0bGyeDt4_ukx4zb8nZBH-okEO2VOqiShI_zQYOQ6A70IDrkimVxTPSD6kedclylqtdKP3CpMA/s320/3.png" alt="img-1">
+        </div>
+
+
+        <div class="container text-center post" id="safa">
+            <div class="row">
+                <div class="col">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS4bFvWzGf_U-yudyjH0DR-EdAUqNX12pyfO_hDG2T2i200gmJxMiBsmb9lSLGY3KUFfq93nTwhtbWgkj117ewcbiPJbP61t4E54N5drKu-f0hKQSaeTLammNrgSsXnModdo3WL0VyQ7xq2k49Mm15P6Vq2B7vUZH1pGI4KnBHxp-FQQbkEH-CXoTxb_0/s320/4.png" alt="img-1">
+                </div>
+            <div class="col">
+                <h5>Hiking</h5>
+                <p>Hiking is a fantastic way to explore the great outdoors, offering a chance to reconnect with nature and enjoy breathtaking scenery. Himachal Pradesh's diverse terrain, including lush forests, snow-capped peaks, and serene valleys, provides an ideal backdrop for hiking enthusiasts of all levels.
+
+
+
+
+
+            </p>
+            </div>
+        
+    <div class="container text-center post">
+        <div class="row">
+          <div class="col">
+            <h5>Paragliding</h5>
+            <p>Bir Billing in Himachal Pradesh stands out as one of the world's premier paragliding destinations, renowned for its stunning views of the Himalayas and excellent flying conditions. Kamshet in Maharashtra is another favorite, offering breathtaking landscapes and perfect weather for thrilling paragliding experiences.</p>
+           </div>
+        <div class="col">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhd8GEPKGBR5OpRrtE7UKKvQSu8qIe9uGHvDVF6t7rnWZpI-7s1ke6Dk9U_PWmZDb6g3PIKH_7NbvM9vguwOtCTeP1JlG3y-4CavNdyFa_odklXZy63uTgtK1LGVnkaTjaHPtijeHHLopG4LRCBzPTpJQQI9O3wifhAZDj0n_E4FQWj2vGpmqyD2lzECHY/s320/5.png" alt="img-1">
+        </div>
+
+
+        <div class="container text-center post lpost">
+            <div class="row">
+                <div class="col">                                                                                                                                                                                                    
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEur01Gh23qVX1U5uGdGtXMTgVg_3_0sAqKjOS0lng4Uwx5M0EdV8tdUF8SiodecyR6kWcuKiJ9akOQ5FdGf-IoOYAJaO5wHy6FD7GU-ZQ1Xz1_Grf97D-uyrhAkJSO4EgsvhlRFyKTMCMno1NFca_syryQcBFyWj46TVoTnWp8ogV9Cp-zf3NvE6jiFk/s320/6.png" alt="img-1">
+                </div>
+            <div class="col">
+                <h5>Skiing</h5>
+                <p>Auli in Uttarakhand is a prominent skiing destination, offering breathtaking views of the Himalayas and perfect slopes for both beginners and experienced skiers. Gulmarg in Jammu and Kashmir is another renowned skiing spot, known for its pristine snow-covered slopes and stunning mountain vistas, attracting skiing enthusiasts from around the world.
+
+
+
+
+
+                </p>    
+            </div>
+
+
+</div>
+
+
+
+
+
+<a href="#top" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- custom js file link  -->
+<script src="js/allscript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+  
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+
+
+
+
+
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+ /* background: #10221b;
+  color: #fff;*/ 
+  border-radius: 20px;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  /* filter: blur(1px); */
+}
+
+.btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+html::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+html::-webkit-scrollbar-thumb {
+    background: #10221b;
+  }
+  
+section {
+    padding: 5rem 9%;
+  }
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.2rem solid #10221b;
+   
+  
+    color: #10221b;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+}
+  
+.btn:hover {
+    background: #10221b;
+    color: #fff;
+}
+  
+.heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: #10221b;
+}
+  
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+  
+.header.active {
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+  
+.header .logo {
+    text-decoration: none;
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: #10221b;
+    font-weight: bolder;
+}
+
+/* .header .logo img {
+  width: 105px;
+  height: 42px;
+} */
+
+
+.header .logo i {
+    color: #219150;
+}
+  
+.header .navbar a {
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: #10221b;
+}
+  
+.header .navbar a:hover {
+    color: #219150;
+}
+  
+.header .navbar #nav-close {
+    font-size: 5rem;
+    cursor: pointer;
+    color: #10221b;
+    display: none;
+}
+  
+.header .icons a,
+.header .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: #10221b;
+}
+  
+.header .icons a:hover,
+.header .icons div:hover {
+    color: #219150;
+}
+  
+.header #menu-btn {
+    display: none;
+}
+  
+.search-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 10000;
+    -webkit-transform: translateY(-110%);
+            transform: translateY(-110%);
+}
+  
+.search-form.active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+}
+  
+.search-form #close-search {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 6rem;
+}
+  
+.search-form #close-search:hover {
+    color: #219150;
+}
+  
+.search-form form {
+    width: 70rem;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+  
+.search-form form input {
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    padding-right: 2rem;
+}
+  
+.search-form form input::-webkit-input-placeholder {
+    color: #aaa;
+}
+  
+.search-form form input:-ms-input-placeholder {
+    color: #aaa;
+}
+  
+.search-form form input::-ms-input-placeholder {
+    color: #aaa;
+}
+  
+.search-form form input::placeholder {
+    color: #aaa;
+}
+  
+.search-form form label {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #fff;
+}
+  
+.search-form form label:hover {
+    color: #219150;
+}
+  
+
+/* ----------------------------------------------------------------    header css ends ---------     */
+
+
+.box {
+    height: 10000px;
+}
+/* 
+ .map-area .background-img {
+    height: 75vh;
+    width: 100%;
+    background: url(../images/mainmap.jpg) no-repeat;
+    background-color: #eee;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover; 
+} 
+
+  
+.map-area .background-img {
+     position: relative;
+
+}
+
+.map-area .background-img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.landmark-icons img {
+     width: 30px;
+    height: 30px;
+}
+
+img, svg {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+} */
+
+/* .main img {
+    animation: shake 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+} */
+
+.main img {
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(1px, 1px) rotate(-1deg); }
+20% { transform: translate(1px, 1px) rotate(1deg); }
+30% { transform: translate(-1px, -1px) rotate(0deg); }
+40% { transform: translate(1px, 1px) rotate(1deg); }
+50% { transform: translate(-1px, -1px) rotate(-1deg); }
+60% { transform: translate(1px, 1px) rotate(0deg); }
+70% { transform: translate(-1px, -1px) rotate(-1deg); }
+80% { transform: translate(1px, 1px) rotate(1deg); }
+90% { transform: translate(-1px, -1px) rotate(0deg); }
+100% { transform: translate(1px, 1px) rotate(-1deg); }
+}
+
+.main .kandy {
+    position: absolute;
+    top: 350px;
+    
+    right: 52%;
+    left: 48%;
+   
+}
+
+
+
+.main .trinco {
+    position: absolute;
+    top: 158px;
+    right: 46%;
+    left: 54%;
+}
+
+.main .galle {
+    position: absolute;
+    top: 570px;
+    right: 68%;
+    left: 32%;
+}
+
+.main .colombo {
+    position: absolute;
+    top: 425px;
+    right: 77%;
+    left: 23%;
+}
+
+.main .katharagama {
+    position: absolute;
+    top: 510px;
+    right: 40%;
+    left: 60%;
+}
+
+.main .nuwaraeliya {
+    position: absolute;
+    top: 400px;
+    right: 48%;
+    left: 52%;
+}
+
+.main .anuradhapura {
+    position: absolute;
+    top: 197px;
+    right: 61%;
+    left: 39%;
+}
+
+
+/* .main {
+    width: 1920px;
+    height: 750px;
+     background: url(../images/mainmap.jpg) no-repeat;
+}
+ */
+
+.main {
+    position: absolute;
+    display:block;
+    top: 80px;
+    /* left: 25vw;
+    right: 25vw; */
+    width: 498px;
+    height: 664px;
+    background: url(../images/map1.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    
+}
+
+
+
+.align {
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main img {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
+.main .jaffna {
+    position: absolute;
+    top: 30px;
+    right: 70%;
+    left: 30%;
+}
+
+
+
+/* .align .main .jaffna:hover {
+    
+} */
+
+.blur {
+    width: 100vw;
+    height: 750px;
+    background: url(../images/mainmap2.jpg);
+    
+}
+
+/* ------------------------------banner, sl map section ends ---------------------------*/
+
+
+
+
+
+
+
+/* ----------------------------------------cards section start----------------------------- */
+
+body {
+    /* Created with https://www.css-gradient.com */
+    background: #ffffff;
+    /* background: -webkit-radial-gradient(top right, #23EC55, #2D51C1);
+    background: -moz-radial-gradient(top right, #23EC55, #2D51C1);
+    background: radial-gradient(to bottom left, #23EC55, #2D51C1); */
+  }
+  
+  .wrapper {
+    margin: 10vh;
+  }
+  
+  .card {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 450px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card.card-has-bg {
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .card.card-has-bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    /* -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); */
+  }
+  .card.card-has-bg:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+    background-size: 130%;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .card.card-has-bg:hover .card-img-overlay {
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    background: #234f6d;
+    background: linear-gradient(0deg, rgba(4, 68, 114, 0) 0%, #04447200 100%);
+  }
+  .card .card-footer {
+    background: none;
+    border-top: none;
+  }
+  .card .card-footer .media img {
+    border: solid 3px rgba(255, 255, 255, 0.3);
+  }
+  .card .card-meta {
+    color: #26BD75;
+  }
+  .card .card-body {
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .card:hover {
+    cursor: pointer;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .card:hover .card-body {
+    margin-top: 30px;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .card .card-img-overlay {
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    background: #234f6d;
+    background: linear-gradient(0deg, rgba(35, 79, 109, 0) 0%, #455f7100 100%);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .card {
+      min-height: 350px;
+    }
+  }
+  @media (max-width: 420px) {
+    .card {
+      min-height: 300px;
+    }
+  }
+
+
+
+
+
+/* ------------------scroller to top css------------------------------------ */
+
+
+.to-top {
+    background: rgb(22, 21, 25);
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    /* color:#1f1f1f; */
+    color: #fff;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    cursor: pointer;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .header {
+      padding: 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    html {
+      font-size: 55%;
+      scroll-padding-top: 7rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: #fff;
+      z-index: 10000;
+      width: 35rem;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    .header .navbar.active {
+      left: 0;
+      -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+              box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+    .header .navbar a {
+      margin: 1rem 0;
+      font-size: 3rem;
+    }
+    .header .navbar #nav-close {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      display: none;
+    }
+    .to-top {
+        font-size:20px;
+        width:40px;
+        height:40px;
+    }  
+     
+  }
+
+@media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    margin: 10vh 5vh 10vh 5vh;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+    .main {
+        width: 360px;
+        height: 480px;
+    }
+    
+    .blur {
+        height: 630px;
+    }
+    .main .jaffna {
+        position: absolute;
+        top: 15px;
+        right: 70%;
+        left: 30%;
+    }  
+    .main .kandy {
+    position: absolute;
+    top: 220px;
+    
+    right: 52%;
+    left: 48%;
+   
+    }
+    .main .trinco {
+    position: absolute;
+    top: 112px;
+    right: 44%;
+    left: 56%;
+    }
+
+    .main .galle {
+    position: absolute;
+    top: 400px;
+    right: 68%;
+    left: 32%;
+    }
+
+    .main .colombo {
+    position: absolute;
+    top: 300px;
+    right: 77%;
+    left: 23%;
+    }
+
+    .main .katharagama {
+    position: absolute;
+    top: 350px;
+    right: 38%;
+    left: 62%;
+    }
+
+    .main .nuwaraeliya {
+    position: absolute;
+    top: 280px;
+    right: 48%;
+    left: 52%;
+    }
+
+    .main .anuradhapura {
+    position: absolute;
+    top: 130px;
+    right: 61%;
+    left: 39%;
+    }
+}
